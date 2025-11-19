@@ -1,0 +1,136 @@
+/* --- Global Styles --- */
+:root {
+  --primary: #2E7D32;
+  --secondary: #1976D2;
+  --accent: #E67C5C;
+  --bg: #FDF9F3;
+  --card: #FFFFFF;
+  --text: #212121;
+  --gray: #616161;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* --- Banner --- */
+.banner {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* --- Navigation --- */
+nav {
+  background-color: white;
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav ul li {
+  padding: 12px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 16px;
+}
+nav ul li a:hover {
+  color: var(--accent);
+}
+
+/* --- Main Content --- */
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+h1 { font-family: 'Poppins', sans-serif; font-size: 2.5rem; margin-bottom: 20px; }
+h2 { font-family: 'Poppins', sans-serif; font-size: 2rem; color: var(--primary); margin: 25px 0 15px; }
+p { margin: 10px 0 20px; font-size: 16px; }
+
+/* --- Buttons --- */
+.btn {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #D46A4A;
+}
+
+/* --- Form Styles --- */
+form {
+  max-width: 600px;
+  background: var(--card);
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 600;
+}
+input, textarea, select, datalist {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border: 2px solid var(--secondary);
+}
+
+/* --- Table --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+th {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #212121;
+  color: white;
+  margin-top: 40px;
+}
